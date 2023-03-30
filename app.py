@@ -32,7 +32,7 @@ st.subheader('Here, Upload your file to get information:')
 st.warning('File should be less than 20 MB for better performance.')
 
 ##############
-file_buffer = st.file_uploader("Please Upload a Dataset before further proceedings:",type=['csv'],encoding='ISO-8859-1')
+file_buffer = st.file_uploader("Please Upload a Dataset before further proceedings:",type=['csv'])#,encoding='ISO-8859-1'
 #text_io = io.TextIOWrapper(file_buffer)
 st.set_option('deprecation.showfileUploaderEncoding', False)
 def load_data(file_buffer):
